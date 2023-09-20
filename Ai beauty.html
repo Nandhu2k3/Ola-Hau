@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<center>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon"  href="img/blue.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLA HAU </title>
+    <link rel="stylesheet" type="text/css" href="style.css"
+  
+    <link rel="stylesheet" href="styles.css">
+    <p style="font-size: 5em;"></p>
+    <style>
+        p{
+            font-size: 5em;
+        }
+    </style>
+    <style>
+        *{
+            text-decoration: none;
+        
+        }
+        
+        .navbar{
+            background:transparent;font-family: calibri; padding-right: 15px;padding-left: 15px;
+        }
+        .navbar{
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .logo a{
+            font-size: 35px; font-weight: 600; color: white;
+            padding-left: 5px;
+            position: absolute;
+            left: 30px;
+        }
+        ul{
+            position: absolute;
+            right: 0;
+        }
+        li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: white;font-size: 18px; font-weight: bold;margin-right: 25px;
+
+        }
+        button{
+            background-color: transparent;margin-left: 10px;border-radius: 5px; padding: 8px; width: 60px;
+        }
+        button a{
+            color: white;font-weight: bold; font-size: 15px;
+        }
+       
+        
+    </style>
+</head>
+<body bgcolor="black" style="color: white;">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">OH</a></div>
+            <ul>
+                <li><a href="#">Home</a></l1>
+                <li><a href="#">Contact</a></l1>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Skin Care Made simple</h1>
+        <img src="img/logo.png" >
+    
+        <p style="font-size: 23px;" class="info">'Ola Hau' stands at the forefront of skincare innovation, driven by advanced AI and machine learning
+             technologies<br> This pioneering solution leverages state-of-the-art ML algorithms to analyse user-uploaded images of diverse 
+             skin conditions.<br> The result is a personalized skincare product recommendation system rooted in real-world user feedback.<br>
+              'Ola Hau' eliminates the guesswork, offering consumers tailored, data-driven choices.</p>
+       
+
+    </header>
+   
+   </div>
+    </div>
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Photo</h2>
+            <form id="image-upload-form" enctype="multipart/form-data">
+                <input type="file" id="image-input" accept="image/*" />
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="result-section">
+            <h2>Result</h2>
+            <p>Predicted skin issue is: <span id="skin-type">Unknown</span></p>
+            <p>Advice: <span id="skin-advice">Unknown</span></p>
+            <p>OTC Product Recommendation: <span id="skin-recommendation">Unknown</span></p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Skin Type Recognition</p>
+    </footer>
+    <script src="main.js"></script>
+</center>
+</body>
+</html>
+
