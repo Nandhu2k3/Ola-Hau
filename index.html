@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/blue.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLA HAU</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body bgcolor="black" style="color: white;">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">OH</a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button onclick="openLoginPopup()">Sign In</button></li>
+                <li><button onclick="openSignupPopup()">Sign Up</button></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <!-- Your header content here -->
+    </header>
+    <main>
+        <!-- Your main content here -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Skin Type Recognition</p>
+    </footer>
+
+    <!-- Login Popup -->
+    <div class="overlay" id="loginOverlay"></div>
+    <div class="popup" id="loginPopup">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Signup Popup (You can add this if needed) -->
+    <!-- <div class="overlay" id="signupOverlay"></div>
+    <div class="popup" id="signupPopup">
+        <span class="close" onclick="closeSignupPopup()">&times;</span>
+        <h2>Signup</h2>
+        <form>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <button type="submit">Signup</button>
+        </form>
+    </div> -->
+
+    <script>
+        function openLoginPopup() {
+            document.getElementById("loginOverlay").style.display = "block";
+            document.getElementById("loginPopup").style.display = "block";
+        }
+
+        function closeLoginPopup() {
+            document.getElementById("loginOverlay").style.display = "none";
+            document.getElementById("loginPopup").style.display = "none";
+        }
+
+        // Function to open the signup popup (if needed)
+        function openSignupPopup() {
+            document.getElementById("signupOverlay").style.display = "block";
+            document.getElementById("signupPopup").style.display = "block";
+        }
+
+        // Function to close the signup popup (if needed)
+        function closeSignupPopup() {
+            document.getElementById("signupOverlay").style.display = "none";
+            document.getElementById("signupPopup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
